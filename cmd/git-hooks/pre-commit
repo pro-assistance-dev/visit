@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# checkClient
+cd ./client
+make pre_commit
+if [ $? -gt 0 ]; then
+  exit 1
+fi
+
+# checkServer
+cd ../server
+make pre_commit
+if [ $? -gt 0 ]; then
+  exit 1
+fi
