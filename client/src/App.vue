@@ -7,11 +7,8 @@
 <script lang="ts" setup>
 import MainLayout from '@/layouts/main/MainLayout.vue';
 
-import AdminLayout from '@/layouts/adminLayout/AdminLayout.vue';
-
 const components = {
   MainLayout,
-  AdminLayout,
 };
 const mounted: Ref<boolean> = ref(false);
 
